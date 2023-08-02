@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.wrapper {
+    position: relative;
+    top: 50vh;
+    transform: translateY(-50%);
+}
+h1 {
+    margin: 0;
+    color: rgb(24, 197, 197);
+    font-size: 62px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.password {
+    border-radius: 50px;
+    height: 60px;
+    width: 99.3%;
+    border: 3px solid rgb(24, 197, 197);
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 30px;
+    outline: none;
+}
+
+.btn {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    padding: 20px 120px;
+    outline: none;
+    border: 1px solid rgb(25, 120, 120);
+    background-color: rgb(24, 197, 197);
+    font-size: 32px;
+    color: #fff;
+
+}
+
+.result {
+    color: #000;
+    font-size: 32px;
+    margin-top: 30px;
+}
+
+.modal-b {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+.modal-window {
+    position: relative;
+    width: 80%;
+    height: 400px;
+    border-radius: 20px;
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(ellipse at 80% 5%, #4c00ff 0%, rgb(255 40 184 / 0%) 30%), radial-gradient(ellipse at bottom left, #ff006a 0%, rgb(98 190 255 / 31%) 60%), linear-gradient(135deg, rgba(18, 46, 119, 0) 0%, rgba(18, 46, 119, 0) 75%, #395eff 100%), linear-gradient(82deg, #dff7ff 0%, #74b5ff 27%, #88b8ff 74%, #82b3ff 100%);
+    background-blend-mode: screen, hue, color, overlay;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transform: translateY(-200vh);
+    z-index: 2;
+    transition: transform ease 0.9s;
+
+}
+
+.close {
+    font-size: 30px;
+    color:#fff; 
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+.modal-window.show{
+    transform: translateY(0);
+}
+.modal-b.show {
+    display: block;
+}
+
+.modal-window  p {
+    padding: 0;
+    margin: 0;
+    font-size: 23px;
+    color: #fff;
+    text-shadow: 0px 2px 15px  rgba(0, 0, 0, 0.6);
+
+}
